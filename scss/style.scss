@@ -1,0 +1,550 @@
+@import "base";
+
+/* #SITE SPECIFIC CUSTOM CSS (e.g. Base Overrides)
+---------------------------------
+	#TYPOGRAPHY OVERRIDES
+		#@FONT-FACE
+        #BODY
+		#HEADINGS
+		#PARAGRAPHS
+    #LAYOUT OVERRIDES
+		#BODY
+		#CONTAINER
+    #NAVIGATION
+        #SITE-BRANDING
+        #SITE-NAVIGATION
+    #CONTENT
+        #SECTIONS
+--------------------------------- */
+
+/* Custom Overrides */
+
+body,html {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+    line-height: inherit;
+}
+
+.hero h1 {
+    line-height: inherit;
+}
+
+
+/*BODY*/
+
+
+
+/*HEADER*/
+
+.site-header a:hover, .site-footer a:hover{
+color:#c6bcbc;
+}
+
+
+
+section {
+    padding: 0;
+}
+
+.site-branding {
+    img {
+        width: 150px;
+        position: absolute;
+        @media (min-width: $breakpoint-small) {
+            width: 200px;
+        }
+        @media (min-width: $breakpoint-medium) {
+            width: 250px;
+        }
+    }
+    h1, p {
+        //display: none;
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+}
+
+
+.site-header {
+  position: absolute;
+  width: 100%;
+  background: transparent;
+  z-index: 100;
+
+}
+
+
+.navcontainer {
+  width: 70%;
+  margin: 0 auto;
+
+}
+
+.site-navigation {
+  background: transparent;
+}
+
+.menu-button.navicon:after {
+    color: white;
+}
+
+
+///*HOME Mouna Cover*///
+
+.hero{
+    padding-top:0;
+    padding-bottom: 3em;
+}
+
+
+.site-main {
+  position: relative;
+}
+
+.site-main .mounacover {
+    //background-color: none;
+    background-image: url(../img/cover.jpg);
+    min-height: 700px;
+    top: 0;
+    background-position: center;
+    //background-attachment: fixed;//
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+.mounacover img{
+        width: 100%;
+        display: block;
+    }
+
+.mouna-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+///*Heart & Contact*///
+
+.home-heart {
+    min-height: 200px;
+    display: block;
+    padding: 0;
+}
+
+.home-heart .container {
+    padding: 8% 4%;
+}
+
+.heart-text {
+    position: center;
+}
+
+.home-heart a.button.alt {
+  margin: 1.5em 1.5em 3.5em 1.5em;
+  //background-color: #908989;
+
+}
+
+.home-heart .decoration_line{
+    border-bottom:1px solid #6A6262;
+}
+
+///*HOME Farm*///
+
+.site-main .homefarm {
+    padding: 0;
+    min-height: 700px;
+    background-color: none;
+    background-image: url(../img/Farm2.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    //background-size: cover;
+    color: white;
+}
+
+.homefarm .container {
+    padding: 20% 4%;
+}
+
+.homefarm img{
+    width: 100%;
+    display: block;
+}
+
+.homefarm a.button.alt {
+    color: white;
+    border: 1px solid white;
+    margin: 1.5em;
+}
+
+/*.homefarm a:hover {
+    color: #918989;
+    background-color: white;
+}
+*/
+
+
+
+///*HOME ARTS&CULTURE*///
+
+.site-main .homearts {
+    padding: 0;
+    min-height: 700px;
+    background-color: none;
+    background-image: url(../img/Arts3.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.homearts .container {
+    padding: 20% 4%;
+}
+
+
+.homearts a.button.alt {
+    color: white;
+    border: 1px solid white;
+    margin: 1.5em;
+}
+
+
+///*HOME EVENTS*///
+
+
+.site-main .homeevents {
+    padding: 0;
+    min-height: 700px;
+    background-color: none;
+    background-image: url(../img/Event4.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    //background-size: cover;
+    color: white;
+}
+
+.home-events .container {
+    padding: 20% 4%;
+}
+
+.homeevents a.button.alt {
+    color: white;
+    border: 1px solid white;
+    margin: 1.5em;
+}
+
+///*HOME STAY IN TOUCH*///
+
+.flower .container {
+ padding-top:3em;
+}
+
+/*FOOTER*/
+
+.site-footer .container{
+    padding-top: 4em;
+    padding-bottom: 5em;
+    border-top: 1px solid #908989;
+}
+
+
+//*SUB PAGE*//
+
+///*OUR STORY*///
+
+.temple1 .container{
+    padding-bottom:3em;
+}
+
+.site-main .ourstory {
+    background-color: transparent;
+    background-image: url(../img/Ourstory.jpg);
+    min-height: 600px;
+    top: 0;
+    background-position: center;
+    //background-attachment: fixed;//
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+
+}
+
+
+
+.ourstory img{
+        width: 100%;
+        display: block;
+    }
+
+.ourstory-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+///*FARM*///
+
+.site-main .farm {
+    background-color: none;
+    background-image: url(../img/Farm2.jpg);
+    min-height: 650px;
+    background-position: center;
+    //background-attachment: fixed;//
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+.farm img{
+        width: 100%;
+    }
+
+.farm-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.heart-text2 {
+    min-height: 10em;
+    margin-top: 7em;
+}
+
+///*ARTS&CULTURE*///
+
+.elephant .container{
+    padding-bottom:3em;
+}
+
+
+.site-main .arts {
+    background-color: none;
+    background-image: url(../img/Arts4.jpg);
+    min-height: 700px;
+    background-position: center;
+    //background-attachment: fixed;//
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+.arts img{
+        width: 100%;
+        display: block;
+    }
+
+.arts-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+p.writing {
+    //min-height: 12em;
+    margin: 4em auto;
+    //padding-right:4%;
+    //padding-left:4%;
+    line-height: 3em;
+    max-width: 40em;
+}
+
+///*EVENTS*///
+
+.site-main .events {
+    background-color: none;
+    background-image: url(../img/Event4.jpg);
+    min-height: 700px;
+    background-position: center;
+    //background-attachment: fixed;//
+    background-repeat: no-repeat;
+    //background-size: cover;//
+    position: relative;
+    color: white;
+}
+
+.events img{
+        width: 100%;
+        display: block;
+    }
+
+.events-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.mounaday .one-half.column {
+    margin-top:6.8em;
+}
+
+//.yoga .one-half.column {
+    //margin-top:6.8em;
+//}
+
+
+
+///*Contact*///
+
+.flower1 .container {
+ padding-top:0;
+ padding-bottom:5em;
+}
+
+.site-main .contactcover {
+  background-color: none;
+    background-image: url(../img/Contactpage.jpg);
+    min-height: 700px;
+    background-position: center;
+    //background-attachment: fixed;//
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+.contactcover img{
+        width: 100%;
+        display: block;
+    }
+
+.contact-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.site-main .one-half column centered1 {
+    float: left;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 20% 4%;
+}
+
+.site-main .one-half column centered2 {
+    float: right;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 20% 4%;
+}
+
+
+//OTHERS//
+
+figcaption {
+    text-align: center;
+}
+
+//row orderswap flexy//
+@media (min-width: 768px) {
+  /* Swap the display order of two columns */
+  .orderswap .one-half.column:first-child {
+    float: right;
+    margin-right: 0;
+    margin-left: 5em;
+    }
+  /* Swap the display order of two columns */
+  .orderswap .one-third.column {
+    float: right;
+    margin-right: 0;
+    margin-left: 8%; }
+    .orderswap .one-third.column:last-child {
+      margin-left: 0; }
+    .orderswap .one-third.column:first-child {
+      margin-left: 8%; }
+  .flexy {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .orderswap.flexy .column:first-child {
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2; } }
+
+
+
+figcaption {
+    text-align: center;
+    opacity: .7;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    font-size: .8em;
+}
+
+/* ful screen modal overlay nav */
+
+@media (min-width: 768px) {
+.site-navigation .flexy .expanded + ul.nav li a {
+    //display: -webkit-flex;
+    //display: -ms-flexbox;
+    //display: flex;
+    //-webkit-align-items: center;
+    //-ms-flex-align: center;
+    //align-items: center;
+  }
+}
+
+
+
+.site-navigation .expanded + ul.nav {
+  background-color: rgba(0,0,0,.5);
+  position: absolute;
+  width: 100%;
+  //height: 100%;
+  top:100%;
+  right:0;
+  margin:0;
+  padding:0;
+  display: block;
+}
+
+.site-navigation .expanded + ul.nav li {
+  margin:0;
+  padding:0;
+  clear: none;
+  height: 33.33333%;
+  width: 50%;
+  float: left;
+  display: block;
+}
+
+.site-navigation .expanded + ul.nav li a {
+  margin:0;
+  padding:6em 0;
+  height: 100%;
+  display: block;
+}
